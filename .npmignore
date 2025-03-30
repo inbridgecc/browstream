@@ -1,0 +1,31 @@
+# Source
+src/
+tests/
+
+# Configuration
+tsconfig.json
+tsup.config.ts
+vite.config.ts
+dprint.json
+.github/
+.gitignore
+
+# Editor
+.vscode/
+.idea/
+
+# Build tools
+.travis.yml
+.gitlab-ci.yml
+.circleci/
+
+# Tests
+coverage/
+.nyc_output/
+*.test.ts
+
+# Development
+*.log
+node_modules/
+.DS_Store 
+yarn.lock

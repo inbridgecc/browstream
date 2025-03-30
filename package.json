@@ -1,0 +1,58 @@
+{
+  "name": "browstream",
+  "version": "0.1.0",
+  "description": "Browser-based live audio-video streaming using WebRTC & FFMPEG/GStreamer.",
+  "repository": "https://github.com/inbridgecc/browstream",
+  "author": "inbridge.cc",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "dprint fmt",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "yarn build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "dprint": "^0.49.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3",
+    "vitest": "^3.0.9"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "browser",
+    "websocket",
+    "live-streaming",
+    "streaming-video",
+    "webrtc",
+    "ffmpeg",
+    "gstreamer",
+    "streaming",
+    "video",
+    "audio"
+  ]
+}
